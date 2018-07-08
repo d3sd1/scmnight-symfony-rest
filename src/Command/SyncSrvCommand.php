@@ -18,6 +18,7 @@ class SyncSrvCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        /* Esto va con REACT, ya que REACT es para SOCKETS */
         $loop = \React\EventLoop\Factory::create();
         $socket = new \React\Socket\Server('127.0.0.1:8080', $loop);
 

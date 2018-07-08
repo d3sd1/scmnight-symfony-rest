@@ -18,6 +18,7 @@ class SyncClientCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        /* Esto va con REACT, ya que REACT es para SOCKETS */
         $loop = \React\EventLoop\Factory::create();
         $connector = new \React\Socket\Connector($loop);
         $connector
